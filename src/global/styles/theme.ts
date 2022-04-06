@@ -25,6 +25,7 @@ export default {
   size: {
     lg: 28,
     md: 20,
-    sm: 16
+    sm: 18,
+    sml: 15
   }
 }
