@@ -1,5 +1,8 @@
 import React from "react";
+
 import { Cards } from "../../components/Cards";
+import { TransactionCard } from "../../components/TransactionCard";
+
 import { 
   Container, 
   Header, 
@@ -53,6 +56,7 @@ export function Dashboard() {
 
       <Transaction>
         <Title>Listagem</Title>
+        <TransactionCard/>
       </Transaction>
     </Container>
   )
