@@ -10,7 +10,9 @@ import {
   UserName, 
   UserContainer, 
   Icon,
-  CardsContent} from "./styles";
+  CardsContent,
+  Transaction,
+  Title } from "./styles";
 
 export function Dashboard() {
   return (
@@ -48,6 +50,10 @@ export function Dashboard() {
           lastTransaction="01 a 16 de abril"
         />
       </CardsContent>
+
+      <Transaction>
+        <Title>Listagem</Title>
+      </Transaction>
     </Container>
   )
 }
