@@ -1,4 +1,5 @@
 import React from "react";
+import { Cards } from "../../components/Cards";
 import { 
   Container, 
   Header, 
@@ -8,7 +9,8 @@ import {
   UserGreeting, 
   UserName, 
   UserContainer, 
-  Icon} from "./styles";
+  Icon,
+  CardsContent} from "./styles";
 
 export function Dashboard() {
   return (
@@ -25,6 +27,12 @@ export function Dashboard() {
           <Icon name="power" />
         </UserContainer>
       </Header>
+
+      <CardsContent>
+        <Cards />
+        <Cards />
+        <Cards />
+      </CardsContent>
     </Container>
   )
 }
