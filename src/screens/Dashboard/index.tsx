@@ -29,9 +29,24 @@ export function Dashboard() {
       </Header>
 
       <CardsContent>
-        <Cards />
-        <Cards />
-        <Cards />
+        <Cards
+          type="up"
+          title="Entradas"
+          amout="R$ 17.400,00"
+          lastTransaction="Ultima entrada dia 13 de abril"
+        />
+        <Cards 
+          type="down"
+          title="Saidas"
+          amout="R$ 1.400,00"
+          lastTransaction="Ultima saida 03 de abril"
+        />
+        <Cards 
+          type="total"
+          title="Entradas"
+          amout="R$ 16.000,00"
+          lastTransaction="01 a 16 de abril"
+        />
       </CardsContent>
     </Container>
   )
