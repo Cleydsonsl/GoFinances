@@ -2,17 +2,25 @@ import styled from 'styled-components/native';
 import { Feather } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 
+interface TypeProps {
+  type: 'positive' | 'negative';
+}
+
 export const Container = styled.View`
   background-color: ${({ theme }) => theme.colors.shape};
   border-radius: 5px;
   padding: 17px 24px;
+
+  margin-bottom: 16px;
 `;
 
 export const Title = styled.Text`
   font-size: ${RFValue(14)}px;
   font-family: ${({ theme }) => theme.fonts.regular};
 `;
-export const Amout = styled.Text`
+export const Amout = styled.Text<TypeProps>`
+  color: ${({ theme, type}) => 
+  type === 'positive' ? theme.colors.green : theme.colors.red};
   font-size: ${RFValue(20)}px;
   font-family: ${({ theme }) => theme.fonts.regular};
   margin-top: 2px;
