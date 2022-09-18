@@ -2,6 +2,7 @@ import styled from "styled-components/native";
 import { Feather } from '@expo/vector-icons';
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import { getBottomSpace, getStatusBarHeight } from "react-native-iphone-x-helper";
+import Carousel from 'react-native-snap-carousel';
 
 import { DataListProps } from '.';
 import { FlatList, FlatListProps } from "react-native";
@@ -74,6 +75,12 @@ export const CardsContent = styled.ScrollView.attrs({
   position: absolute;
   margin-top: ${RFPercentage(20)}px;
 `;
+
+export const StyleCarrousel = styled(Carousel)`
+  width: 100%;
+  position: absolute;
+  margin-top: ${RFPercentage(20)}px;
+`
 
 export const Transaction = styled.View`
   flex: 1%;

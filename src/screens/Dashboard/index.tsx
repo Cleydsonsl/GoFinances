@@ -16,7 +16,8 @@ import {
   CardsContent,
   Transaction,
   Title, 
-  TransactionList} from "./styles";
+  TransactionList,
+  StyleCarrousel} from "./styles";
 
   export interface DataListProps extends TransactionCardProps {
     id: string;
@@ -95,6 +96,20 @@ export function Dashboard() {
         />
       </CardsContent>
 
+      {/* <StyleCarrousel
+        data={data}
+        renderItem={
+          ({item}) => item(
+            <Cards
+            type="up"
+            title="Entradas"
+            amout="R$ 17.400,00"
+            lastTransaction="Ultima entrada dia 13 de abril"
+          />
+          )
+        }
+      ></StyleCarrousel> */}
+        
       <Transaction>
         <Title>Listagem</Title>
 
